@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "type": "commonjs",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@truffle/hdwallet-provider": "^2.1.15",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "ganache-cli": "^6.12.2",
+        "laravel-vite-plugin": "^1.0",
+        "postcss": "^8.4.47",
+        "tailwindcss": "^3.4.13",
+        "truffle": "^5.11.5",
+        "vite": "^5.0"
+    }
+}
