@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Pages\Auth\Login;
 use Filament\FontProviders\GoogleFontProvider;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -28,7 +29,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->login()
+            ->login(Login::class)
             ->profile()
             ->colors([
                 'danger' => Color::Rose,
@@ -43,6 +44,9 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(asset('propiedass-removebg-preview.png'))
             ->brandLogoHeight('60px')
             // ->databaseNotifications()
+            
+            ->globalSearchKeyBindings(['command+k', 'ctrl+k'])
+            // ->globalSearchDebounce('750ms')
             ->sidebarCollapsibleOnDesktop()
             // ->topNavigation()
             ->collapsedSidebarWidth('9rem')

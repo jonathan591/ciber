@@ -9,6 +9,7 @@
         "php": "^8.2",
         "bezhansalleh/filament-shield": "^3.3",
         "cloutier/php-ipfs-api": "^0.0.6",
+        "coderflex/filament-turnstile": "^2.2",
         "filament/filament": "^3.2.0",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
